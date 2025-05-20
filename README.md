@@ -40,16 +40,22 @@
 
 用文本编辑器打开 Python 脚本（例如 `mirror_site.py`），修改文件顶部的配置变量：
 
-
-# --- 配置 ---
 TARGET_URL = "[http://example.com](http://example.com)"  # 请修改为你想要镜像的网站URL
+
 DOWNLOAD_DIR = "mirrored_site"    # 镜像文件将保存到的目录名
+
 SERVER_PORT = 712                 # 本地查看服务器的端口
+
 RESPECT_ROBOTS_TXT = True         # 设置为 False 则忽略 robots.txt (不建议用于公共网站)
+
 TARGET_URL: 您希望镜像的网站的完整 URL（包括 http:// 或 https://）。
+
 DOWNLOAD_DIR: 将在脚本所在目录中创建的文件夹名称，用于存储镜像文件。
+
 SERVER_PORT: 用于查看镜像的本地 HTTP 服务器将运行的端口。
+
 RESPECT_ROBOTS_TXT:布尔值。如果为 True，脚本将尝试获取并遵守目标站点的 robots.txt 规则。设置为 False 则禁用此功能（请谨慎使用并尊重网站条款）。
+
 ## 使用方法
 1.确保您已在脚本中配置了 TARGET_URL 和其他设置。
 2.在终端中运行脚本：
